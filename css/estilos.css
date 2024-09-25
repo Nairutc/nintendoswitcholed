@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: black;
+    padding-top: 80px;
+   
+}
+
+main {
+    max-width: 1200px;
+    margin:0  auto;
+}
+
+.header{
+    background-color: #030001;
+    text-transform: uppercase;
+    color: aliceblue;
+    position:fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+strong{
+    color: #000000;
+    text-shadow: none;
+}
+.font_peq{
+    color: red;
+    font-size: 1.4rem;
+    display: block;
+}
+
+nav ul{
+    max-width: 1200px;
+    list-style: none;
+    padding: 0;
+    margin: 0% auto;
+}
+
+nav ul li{
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-variant: small-caps;
+    background-color: #e51200;
+    margin-bottom: 0.5rem;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    border-style:outset;
+    margin: 1rem;
+}
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+main{
+    margin: 1rem auto;
+    background-color: #030001;
+    color: aliceblue;
+    padding-bottom: 2rem;
+}
+
+
+h1{
+    margin-top: 0.5rem;
+    font-size: 2.2rem;
+}
+
+
+h2{
+    margin: 2rem 2rem 2rem;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    font-variant: small-caps;
+
+}
+
+h3 {
+    margin: 1rem 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(208, 35, 53);
+    
+}
+
+
+p {
+    width: 95%;
+    margin:auto;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-shadow: 1px 1px 2px rgb(255, 247, 247);
+    padding: 1.5rem;
+    background-color: #e51300b3;
+    border: thin solid rgba(245, 245, 245, 0.712);
+   
+}
+
+
+fieldset{
+    width: 95%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+input{  
+    display: block;
+    width: 90%;
+   }
+
+#form{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+   }
+
+label{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+   }
+
+input[type="radio"]{
+    
+    width: 100%;
+    vertical-align: top;
+   }
+
+input[type="text"], input[type="email"], input[type="tel"]{
+            height: 2rem;
+            margin: 1rem auto;
+
+}
+
+textarea{
+        width: 100%;
+        height: 8rem;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"]{  
+                    font-size: 1.2rem;
+                    width: 40%;
+                    padding: 1rem;
+                    margin-top: 2rem;
+                    background-color: #da301d;
+                    color: aliceblue;
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.648);
+                    margin:auto;
+  
+   }
+
+footer{
+    background-color: #e51200;
+    color:white;
+    padding: 2rem 0;
+}
+
+footer ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#foot{
+     display: none;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+
+li img{
+    max-width: 250px;
+    margin: auto;  
+}
+
+div img{
+    border-top: 2px solid rgb(234, 24, 24);
+    border-bottom: 2px solid rgb(234, 24, 24);
+}
+
+.gracias{
+    
+    margin:2rem auto ;
+    padding: 2rem;
+    width: 100%;
+    color: #e51200;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    background: url(../img/fondo_nintendo_switch_oled.jpg) no-repeat;
+    background-size: cover;
+     
+}
+
+main .mensaje h2{
+    min-width:60%;
+    margin: auto;
+
+}
+
+.volver{
+    text-align: center;
+    width: 30%;
+    color: aliceblue;
+    margin: auto;
+    background-color: #e51200;
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.648);
+}
+
+p > a {  
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    text-shadow:none;
+    }
+
+.p_escritorio{
+        display: none;
+    }
+
+em{
+    color: antiquewhite;
+    text-shadow: none;
+}
+
+
+@media screen and (min-width:600px){
+
+        nav ul{
+                text-align: center;
+                margin-top:1rem;
+       }
+
+       nav ul li{
+           display: inline-block;
+           width: 250px;
+           
+       }
+
+       .galeria{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    
+        }
+
+        div img{
+            margin: 0.1rem;
+            padding: 0.5rem;
+            border: none;
+            }
+
+        
+
+@media screen and (min-width:1260px){
+
+    strong{
+        color: #e51200;
+        text-shadow: none;
+    }
+
+    .intro{
+           overflow-y: auto;
+    }
+
+    nav ul li:hover{
+        background-color: #f42419;
+    }
+
+    .banner{display: block;}
+
+    .banner{
+            max-width: 700px;
+            float:right;
+            margin: 1rem;
+            vertical-align: top;      
+    }
+
+    .oculto{
+        display: none;
+    }
+
+    .p_escritorio{
+        display: flex;
+    }
+
+    .sect2 , .sect3 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                    margin: 1rem auto;    
+    }
+
+    .img_izq{    
+        margin-top: 5rem;
+    }
+
+    .sect3{
+        border: 2px solid red;
+        
+    }
+
+    p {
+        font-size: 2rem;
+        background-color: #000000;
+        border: none;
+    }
+
+    h2, .linea{
+        font-size: 2.8rem;
+        border-bottom: 2px solid white;
+        padding-bottom: 1rem;
+    }
+
+  
+
+    h3{
+        margin: 2rem 2rem;
+        font-size: 2.6rem ;
+    }
+ 
+     .izq{
+        padding-left: 1.5rem;
+        border-left: 2px solid white;
+    }
+
+    .abajo{
+            margin-top: 5rem;
+    }
+
+    .centro{
+         width: 80%;
+         margin: 3rem auto;
+    }
+
+    .centrado{
+        text-align: center;
+    }
+
+     .chick{
+            max-width: 50%;
+            margin: 1rem auto;
+            padding: 1rem;
+            border:2px solid white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgb(242, 41, 41);
+     }
+
+     .galeria img {
+                border: 2px solid white;
+                padding: 0;
+     }
+
+    .formulario_red p{
+        background-color: red;
+        border: 0.3rem solid white;
+        box-shadow: 0px -4px 15px rgb(242, 41, 41);
+        border-radius: 10rem;
+        text-align: center;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 1rem auto; 
+        font-size: 1.8rem;
+    }
+
+    .boton{
+           text-align: center;
+    }
+
+    .mario{
+        
+            
+            background: rgb(0, 0, 0) url(../img/mario_bross.png) no-repeat 50% 96%;
+            background-size:auto;
+    }
+
+    header{
+        height: 100px;
+        background: url(../img/logo.png) no-repeat 25% 10% ;
+        border-bottom: 2px double white ;
+    }
+    h1{
+        width: 80%;
+        text-align: right; 
+        
+    }
+
+    nav{margin-top: 3rem;}
+
+    
+    .gracias{
+        background-image: none;
+        background: #ffffff url(../img/mario_bross.png) no-repeat ;
+        background-size: contain;
+    }
+   
+  
+}
+    
+
+}
